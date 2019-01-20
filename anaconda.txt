@@ -1,0 +1,12 @@
+2. 配置和使用
+
+最后一步选择了默认的no，然后在终端中输入conda，发现command not found，我就知道是前面选择了no的原因。于是上网找，怎样把它加到系统环境中，找到的解决方案是：
+
+    # 将anaconda的bin目录加入PATH，根据版本不同，也可能是~/anaconda3/bin
+    echo 'export PATH="~/anaconda2/bin:$PATH"' >> ~/.bashrc
+    # 更新bashrc以立即生效
+    source ~/.bashrc
+
+以上两行都是在终端里执行的。
+
+然后就可以正常使用conda了。
